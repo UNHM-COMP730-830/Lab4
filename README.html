@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+          font-family: calibri, sans-serif;
+      }
+      kbd {
+          font-size: 12px;
+      }
+      pre code {
+          font-size: 12px;
+          background-color: #eee;
+          border: 1px solid #999;
+          display: block;
+          padding: 5px;
+      }
+      iframe {
+          background: #eee;
+          border: 1px solid;
+      }
+      table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+          padding-top: 3px;
+          padding-bottom: 3px;
+          padding-left: 6px;
+          padding-right: 6px;
+      }
+    </style>
+  </head>
+  <title>README</title>
+  <body>
+
+    <h1>Lab4: Pizza Builder</h1>
+
+    <p>
+      <img src="Lab4_Files/App_Windows.jpg">
+    </p>
+
+    <h2>Objectives</h2>
+
+    <ul>
+      <li>Learn how to use and implement Builder Design Pattern.</li>
+      <li>Learn how to use and implement Decorator Design Pattern.</li>
+    </ul>
+    
+    <h2>Work</h2>
+
+    <ol>
+      <li>Pizza Builder creates different pizza orders and shows the order list.</li>
+      <li>The program uses the builder and decorator design patterns.</li>
+      <li>Lab4.java is the main Java file which defines all the window
+	components. You don't need to make any changes to the file.</li>
+      <li>To create new Pizzas independently and increase the code
+	readability, apply the fluent builder pattern to the Pizza class.</li>
+      <li>Complete the static inner class Builder within the Pizza class
+	that allows to use the method chaining to add toppings.
+	It should have the build() method that initializes and returns new
+	fresh pizza. In the end, you should be able to build pizza instances
+	like:</li>
+
+<pre><code>Pizza pizza = new Pizza.Builder(PizzaSize.MEDIUM)
+    .addPineapple()
+    .addChicken()
+    .addPeppers()
+    .build();
+</code></pre>
+
+      <li>Order is defined as an interface in Order.java.
+	It is implemented by the OrderDecorator and Pizza classes.
+	The OrderDecorator class is extended by the Coupon, Delivery, and
+	Side classes.</li>
+
+      <p>
+	<img src="Lab4_Files/Class_Diagram.jpg">
+      </p>
+
+      <li>Complete the Side class. Use $3 for each side.</li>
+
+    </ol>
+    <p>
+      === End of Lab4 ===
+    </p>
+
+  </body>
+</html>
